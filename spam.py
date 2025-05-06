@@ -37,3 +37,12 @@ if st.button("Predict"):
             st.success("This email is classified as *Not Spam*.")
     else:
         st.write("Please enter an email message to classify.")
+
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
